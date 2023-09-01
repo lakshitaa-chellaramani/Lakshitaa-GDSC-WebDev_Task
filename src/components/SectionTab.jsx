@@ -1,5 +1,9 @@
 import React from "react";
-import HeroProducts from "./HeroProducts";
+import HeroProducts from "./Tabs/HeroProducts";
+import Men from "./Tabs/Men";
+import Women from "./Tabs/Women";
+import Kids from "./Tabs/Kids";
+
 import {
   Tabs,
   TabsHeader,
@@ -8,32 +12,35 @@ import {
   TabPanel,
 } from "@material-tailwind/react";
 
-export function SectionTab() {
+const Secttt = () => {
+  return (
+    <div>Hello world</div>
+  )
+}
+ 
+
+ function SectionTab() {
   const [activeTab, setActiveTab] = React.useState("html");
   const data = [
     {
       label: "All Collection",
       value: "html",
-      desc: "This is the HTML tab content."
+      desc: <HeroProducts/>
     },
     {
       label: "Mens Collection",
       value: "react",
-      desc: `Because it's about motivating the doers. Because I'm here
-      to follow my dreams and inspire other people to follow their dreams, too.`,
+      desc: <Men/>,
     },
     {
       label: "Womens Collection",
       value: "vue",
-      desc: `We're not always in the position that we want to be at.
-      We're constantly growing. We're constantly making mistakes. We're
-      constantly trying to express ourselves and actualize our dreams.`,
+      desc: <Women/>,
     },
     {
       label: "Kids Collection",
       value: "angular",
-      desc: `Because it's about motivating the doers. Because I'm here
-      to follow my dreams and inspire other people to follow their dreams, too.`,
+      desc: <Kids/>,
     },
     
   ];
@@ -58,9 +65,9 @@ export function SectionTab() {
         ))}
       </TabsHeader>
       <TabsBody>
-        {data.map(({ value, desc }) => (
-          <TabPanel key={value} value={value}>
-            {desc}
+        {data.map((value, i) => (
+          <TabPanel key={i} value={value.value}>
+            {value.desc}
           </TabPanel>
         ))}
       </TabsBody>

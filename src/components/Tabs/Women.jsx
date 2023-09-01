@@ -1,5 +1,6 @@
 import React from 'react'
-import SectionTab from './SectionTab'
+// import SectionTab from './SectionTab'
+
 
 const HeroProducts = () => {
     return (
@@ -7,10 +8,10 @@ const HeroProducts = () => {
             <div class=" py-6 sm:py-8 lg:py-12">
                 <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
                     <div class="mb-6 flex items-end justify-between gap-4">
-                        <h2 class="text-2xl font-bold text-transparent  bg-clip-text bg-gradient-to-r from-indigo-400 to-blue-400 lg:text-3xl">Products</h2>
+                        <h2 class="text-2xl font-bold text-transparent  bg-clip-text bg-gradient-to-r from-indigo-400 to-blue-400 lg:text-3xl">Women</h2>
 
                     </div>
-                    <SectionTab/>
+                    {/* <SectionTab/> */}
 
                     <div class="grid gap-x-4 gap-y-8 sm:grid-cols-2 md:gap-x-6 lg:grid-cols-3 xl:grid-cols-4">
                         <div>
