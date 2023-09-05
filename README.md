@@ -13,7 +13,7 @@ A modern eCommerce website built with ReactJS, TailwindCSS, and Material Tailwin
 
 ## Demo
 
-[Live Demo](AddYourLiveDemoLinkHere)
+[[Live Demo](AddYourLiveDemoLinkHere)](https://gdsctask.quantafile.com/)
 
 ## Features
 
