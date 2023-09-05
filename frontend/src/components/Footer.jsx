@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <div>
             <div class="">
-                <footer class="mx-auto border-t border-gray-600 max-w-screen-2xl px-4 md:px-8">
+                <footer class="mx-auto border-t bg-gray-900 border-gray-600 max-w-screen-2xl px-4 md:px-8">
                     <div class="mb-16 grid grid-cols-2 gap-12 pt-10 md:grid-cols-4 lg:grid-cols-6 lg:gap-8 lg:pt-12">
                         <div class="col-span-full lg:col-span-2">
                             <div class="mb-4 lg:-mt-2">
@@ -13,7 +13,7 @@ const Footer = () => {
                                         <path d="M96 0V47L48 94H0V47L48 0H96Z" />
                                     </svg>
 
-                                    Lakshita
+                                    MyCommerce
                                 </a>
                             </div>
 
@@ -99,7 +99,7 @@ const Footer = () => {
                        
                     </div>
 
-                    <div class="border-t border-gray-800 py-8 text-center text-sm text-gray-400">© 2021 - Present Flowrift. All rights reserved.</div>
+                    <div class="border-t border-gray-800 py-8 text-center text-sm text-gray-400">© 2023 - All rights reserved.</div>
                 </footer>
             </div>
         </div>

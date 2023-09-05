@@ -13,12 +13,15 @@ const Navbar = () => {
                         </svg>
                     </button>
 
-                    <div class="flex items-center flex-shrink-0 ml-4 lg:ml-0">
-                        <a href="#" title="" class="inline-flex rounded focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900">
-                            <span class="sr-only"> Rareblocks logo </span>
-                            <img class="w-auto h-8" src="https://cdn.rareblocks.xyz/collection/clarity-ecommerce/images/logo.svg" alt="" />
-                        </a>
-                    </div>
+                    <Link to="/"><div class="flex items-center flex-shrink-0 ml-4 lg:ml-0">
+                    <a href="/" class="inline-flex items-center gap-2.5 text-xl font-bold text-gray-700 md:text-2xl" aria-label="logo">
+                    <svg width="85" height="94" viewBox="0 0 95 94" class="h-auto w-6 text-indigo-500" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M96 0V47L48 94H0V47L48 0H96Z" />
+                    </svg>
+            
+                    MyCommerce
+                  </a>
+                    </div></Link>
 
                     <div class="flex items-center justify-end ml-auto">
                         <div class="hidden lg:flex lg:items-center lg:space-x-8">

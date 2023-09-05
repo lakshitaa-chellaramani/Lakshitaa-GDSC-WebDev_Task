@@ -1,20 +1,16 @@
-// ProductDetail.js
 
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { useCart } from "./CartContext"; // Import the useCart hook
-import CartValue from './CartValue';
+import { useCart } from "./CartContext"; 
 
 const ProductDetail = () => {
   const { productId } = useParams();
   const [product, setProduct] = useState(null);
-  const { dispatch } = useCart(); // Get the cart dispatch function
+  const { dispatch } = useCart(); 
 
   useEffect(() => {
-    // Define the API URL for fetching product details based on the productId
     const apiUrl = `https://fakestoreapi.com/products/${productId}`;
 
-    // Fetch product data based on the productId
     fetch(apiUrl)
       .then((response) => response.json())
       .then((data) => {
@@ -26,12 +22,10 @@ const ProductDetail = () => {
   }, [productId]);
 
   if (!product) {
-    // You can display a loading indicator or error message here
     return <div>Loading...</div>;
   }
 
   const handleAddToCart = () => {
-    // Dispatch an action to add the current product to the cart
     dispatch({
       type: "ADD_TO_CART",
       payload: product,
@@ -63,11 +57,9 @@ const ProductDetail = () => {
 
             <div className="md:py-8">
               <div className="mb-2 md:mb-3">
-                <span className="mb-0.5 inline-block text-gray-500">
-                  {product.title}
-                </span>
-                <h2 className="text-2xl font-bold text-gray-800 lg:text-3xl">
-                  Pullover with pattern
+                
+                <h2 className="text-2xl font-bold text-gray-600 lg:text-3xl">
+                {product.title}
                 </h2>
               </div>
 
