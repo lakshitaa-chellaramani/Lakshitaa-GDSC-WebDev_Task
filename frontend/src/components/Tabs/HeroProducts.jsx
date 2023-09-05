@@ -21,7 +21,7 @@ const HeroProducts = () => {
 
   return (
     <div>
-      <div className="mx-auto max-w-screen-2xl py-6 sm:py-8 lg:py-12">
+      <div className="mx-auto max-w-screen-xl px-10 py-6 sm:py-8 lg:py-12">
         <div className="mb-6 flex items-end justify-between gap-4">
           <h2 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-blue-400 lg:text-3xl">
             All Products
