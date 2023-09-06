@@ -5,10 +5,8 @@ const HeroProducts = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    // Define the API URL
     const apiUrl = "https://fakestoreapi.com/products";
-
-    // Fetch data from the API
+    
     fetch(apiUrl)
       .then((response) => response.json())
       .then((data) => {
